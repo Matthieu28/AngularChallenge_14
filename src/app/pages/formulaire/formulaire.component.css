@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.container > form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > div {
+  width: 40%;
+}
+
+.info_user {
+  width: 55%;
+}
+
+.label_input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-left: 0.5rem;
+}
+
+input {
+  border: none;
+  background-color: rgb(237, 237, 237);
+  border-radius: 15px;
+  padding: 0.35rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    flex-direction: column;
+  }
+  .container > form,
+  .container > div {
+    width: 70%;
+  }
+}
